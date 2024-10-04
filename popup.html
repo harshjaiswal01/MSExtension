@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Post to Vision Board</title>
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f8f5f0;
+      font-family: 'Open Sans', sans-serif;
+      width: 350px;
+      height: 500px;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      color: #f8b400;
+      font-size: 1.5rem;
+    }
+
+    button {
+      background-color: #f8b400;
+      color: #1a1a1a;
+    }
+
+    button:hover {
+      background-color: #e09d00;
+    }
+    
+    .container {
+      margin-top: 20px;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 100px; /* Adjust as needed */
+    }
+  </style>
+</head>
+<body>
+  <div id="login-section" class="container">
+    <img src="icons/logo.png" alt="App Logo" class="logo">
+    <h2>Login</h2>
+    <div class="form-group">
+      <input id="email" class="form-control" placeholder="Email" type="text" />
+    </div>
+    <div class="form-group">
+      <input id="password" class="form-control" placeholder="Password" type="password" />
+    </div>
+    <button id="login-btn" class="btn btn-warning btn-block">Login</button>
+  </div>
+
+  <div id="board-section" class="container" style="display:none;">
+    <h2>Select a Board</h2>
+    <div class="form-group">
+      <select id="board-select" class="form-control"></select>
+    </div>
+    <h3>Select Content Type</h3>
+    <div class="form-group">
+      <select id="content-type" class="form-control">
+        <option value="article">Article</option>
+        <option value="video">Video</option>
+        <option value="website">Website</option>
+      </select>
+    </div>
+    <button id="post-btn" class="btn btn-warning btn-block">Post Current Site</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// No specific background logic is needed right now.
